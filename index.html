@@ -5,29 +5,86 @@
 <script src="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.js"></script>
 <style>  
   body { line-height:1.5; margin:auto; padding:3px; max-width:1024px; display:none; FONT-FAMILY:ARIAL; }
-  h1  { font-size:200%; padding:16px; border:1px solid lightgrey; BACKGROUND:STEELBLUE; COLOR:WHITE }
-  h2  { border-bottom:1px solid grey; padding:2px; COLOR:STEELBLUE }
+  h2  { border-bottom:1px solid grey; padding:2px; COLOR:#1e3d59 }
+  
+  /* Nuevo Header Moderno y Confiable */
+  .custom-header {
+    background: #1e3d59; /* Un azul profundo, elegante y profesional */
+    color: white;
+    padding: 24px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .custom-header h1 {
+    font-size: 220%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: right;
+  }
+  .contact-info {
+    font-size: 95%;
+    line-height: 1.6;
+  }
+  .profile-img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
+  /* Ajuste para pantallas pequeñas */
+  @media (max-width: 650px) {
+    .custom-header { flex-direction: column; text-align: center; }
+    .header-right { flex-direction: column-reverse; text-align: center; gap: 10px; }
+  }
 </style>
 <body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';">
-
-<img style="float:right;border-radius:50%;width:70px;padding:6px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWrLGRu2jFswPBN2vIHsGt3kdeeNyM9mUjNw&s" />
+<div class="custom-header">
+  <h1>Carolina Caballero Cordero</h1>
   
-<span style="float:right;padding:6px;text-align:right;COLOR:WHITE"> 
-  carytocc@yahoo.com.mx <br> 5586782881 <br> México, CDMX
-</span>
-
-# Carolina Caballero Cordero  
+  <div class="header-right">
+    <div class="contact-info">
+      carytocc@yahoo.com.mx <br> 
+      5586782881 <br> 
+      México, CDMX
+    </div>
+    <img class="profile-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWrLGRu2jFswPBN2vIHsGt3kdeeNyM9mUjNw&s" alt="Foto de perfil">
+  </div>
+</div>
 
 ## Sobre Mí
 
-Profesional en Biología con experiencia en análisis de datos, enseñanza y trabajos administrativos. Tengo interés en proyectos sociales que integren el uso de las ciencias informáticas. Domino lenguajes de programación para el manejo, análisis y visualización de datos. Tengo facilidad para aprender de forma autónoma, capacidad de análisis, pensamiento lógico, resolución de problemas y habilidades para trabajar en equipo.
+Profesional en Biología especializada en Ciencia e Ingeniería de Datos. Experiencia en el diseño de pipelines ETL/ELT, optimización de bases de datos relacionales y análisis estadístico. Interesada en la intersección entre la tecnología y los proyectos de impacto social o institucional. Con una sólida capacidad de autoaprendizaje, pensamiento lógico-estructurado y resolución de problemas complejos, facilitando la colaboración efectiva en entornos técnicos y multidisciplinarios.
 
 ## Experiencia
 
-#### Docente de Tecnologías (Febrero 2023 – presente) 
+#### Enlace auxiliar (Octubre 2025 - Presente)
+**IMSS Bienestar**
+* Optimicé procesos de ETL migrando flujos tradicionales a arquitecturas basadas en DuckDB y Polars, permitiendo la transformación eficiente de datasets masivos.
+* Diseñé la arquitectura y esquemas relacionales en PostgreSQL / Supabase, implementando funciones y triggers para auditoría interna y asegurar la integridad de los datos.
+* Automaticé pipelines de integración de datos mediante n8n, conectando flujos de trabajo institucionales con formularios dinámicos y almacenes de datos.
+* Gestioné el ciclo de vida del desarrollo utilizando Git y GitHub (manejo de ramas, resolución de conflictos), asegurando el control de versiones en el despliegue de aplicaciones.
+
+#### Docente de Tecnologías (Febrero 2023 – septiembre 2025) 
 **PILARES CDMX (Gobierno de la CDMX)**
-* Diseño e impartición de talleres de hojas de cálculo (Google Sheets y Excel)
-* Diseño e impartición de cursos de programación (pensamiento lógico y computacional, manejo de bases de datos con SQL, Python para Ciencias de Datos)
+* Diseñé e impartí de talleres de hojas de cálculo (Google Sheets y Excel)
+* Diseñé e impartí de cursos de programación (pensamiento lógico y computacional, manejo de bases de datos con SQL, Python para Ciencias de Datos)
 
 #### Becaria de Investigación (Octubre 2022 – Julio 2023)
 **Instituto de Ecología (UNAM)**
@@ -48,12 +105,14 @@ Profesional en Biología con experiencia en análisis de datos, enseñanza y tra
 ## Habilidades Técnicas
 
 * **Lenguajes de programación:** Python, R, SQL y Bash
+* **Bases de Datos:** PostgreSQL, Supabase.
+* **Ingeniería de Datos y Automatización (ETL):** DuckDB, Polars, n8n Cloud.
 * **Herramientas para análisis de datos:** Pandas, ggplot2, Tableau, Matplotlib, Seaborn, RShiny, Tablas dinámicas
-* **Ofimática:** Paquetería de Office y de Google, Canva
+* **Herramientas y Entorno:** Git, GitHub, Tableau, Excel Avanzado.
 
 ## Idiomas
 
 * **Inglés:** B2
 
 ---
-*Septiembre, 2025*
+<p style="color: grey; font-style: italic;">Mayo, 2026</p>
